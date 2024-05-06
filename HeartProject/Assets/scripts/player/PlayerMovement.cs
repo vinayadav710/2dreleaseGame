@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
        horizontalMove =  Input.GetAxisRaw("Horizontal")* runSpeed;
-        Debug.Log(Input.GetAxisRaw("Horizontal"));
+        //Debug.Log(Input.GetAxisRaw("Horizontal"));
 
         animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
